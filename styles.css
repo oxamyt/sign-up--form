@@ -2,7 +2,6 @@
 
 .container{
     display: flex;
-    border: solid 2px red;
 }
 
 .left-side{
@@ -29,11 +28,12 @@ a{
     display: flex;
     width: 100%;
     flex-direction: column;
+    background-color: #FDFCFA;
 }
 
 .header{
-    background-color: rgb(229, 197, 197);
-    height: 400px;
+    background-color: #FDFCFA;
+    height: 350px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -46,4 +46,42 @@ a{
     width: 880px;
     margin-left: 30px;
 
+}
+
+.inputs{
+    background-color: #e9dbc1;
+}
+
+
+.form-info{
+    display: flex;
+    margin-left: 30px;
+    height: 250px;
+}
+
+.left-box{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.right-box{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+label{
+    display: block;
+}
+
+input{
+    width: 200px;
+}
+
+.submit {
+    background-color: #FDFCFA;
+    margin-left: 30px;
+    margin-top: 40px;
+    height: 350px;
 }
