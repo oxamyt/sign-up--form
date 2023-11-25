@@ -9,8 +9,29 @@
     width: 900px;
     height: 1098px;
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 150px;
+    height: 200px;
+}
+
+.left-header{
+    background-color: rgba(0, 0, 0, .3);
+    margin-top: 175px;
+    height: 200px;
+    width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.logo-text{
+    font-size: 5rem;
+    color: white;
 }
 
 .credits {
@@ -45,13 +66,17 @@ a{
     margin-bottom: 30px;
     width: 880px;
     margin-left: 30px;
-
 }
 
 .inputs{
     background-color: #e9dbc1;
 }
 
+.text{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    padding-top: 15px;
+}
 
 .form-info{
     display: flex;
@@ -85,3 +110,4 @@ input{
     margin-top: 40px;
     height: 350px;
 }
+
