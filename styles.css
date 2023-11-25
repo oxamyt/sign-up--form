@@ -2,11 +2,12 @@
 
 .container{
     display: flex;
+    border: solid 2px red;
 }
 
 .left-side{
     background-image: url('../assets/back.jpg');
-    width: 600px;
+    width: 900px;
     height: 1098px;
     display: flex;
     align-items: flex-end;
@@ -26,5 +27,23 @@ a{
 
 .right-side{
     display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.header{
+    background-color: rgb(229, 197, 197);
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header-text{
+    margin-bottom: 30px;
+    width: 880px;
+    margin-left: 30px;
 
 }
