@@ -13,3 +13,4 @@ else{
 
 password.onchange = validate;
 confirm.onkeyup = validate;
+
