@@ -1,12 +1,16 @@
 *{box-sizing: border-box;}
 
+body{
+    background-image: url('https://i.gifer.com/YQgT.gif')
+}
+
 .container{
     display: flex;
 }
 
 .left-side{
     background-image: url('../assets/back.jpg');
-    width: 900px;
+    width: 1500px;
     height: 1098px;
     display: flex;
     justify-content: space-between;
@@ -47,9 +51,11 @@ a{
 
 .right-side{
     display: flex;
-    width: 100%;
+    width: 700px;
     flex-direction: column;
-    background-color: #FDFCFA;
+    background-color: rgb(0, 0, 0, 0.8);
+    justify-content: center;
+    
 }
 
 .header{
@@ -66,10 +72,6 @@ a{
     margin-bottom: 30px;
     width: 880px;
     margin-left: 30px;
-}
-
-.inputs{
-    background-color: #e9dbc1;
 }
 
 .text{
@@ -101,7 +103,8 @@ label{
 }
 
 input{
-    width: 200px;
+    width: 350px;
+    line-height: 1.5rem;
 }
 
 .submit {
@@ -111,3 +114,33 @@ input{
     height: 350px;
 }
 
+form{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    gap: 16px;
+}
+
+.form-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-submit{
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    color: white;
+}
