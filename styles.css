@@ -5,7 +5,10 @@
   font-family: 'VT323', monospace;
 }
 
-
+::selection{
+    color: wheat;
+    background-color: orange;
+}
 
 body{
     background-image: url('https://media4.giphy.com/media/rzeWnbH8Uc5Y4/giphy.gif?cid=ecf05e47bdpmzw9nnbajydse5rjr9pjggvs5w1qtddmv6vok&ep=v1_gifs_search&rid=giphy.gif&ct=g');
@@ -41,8 +44,14 @@ body{
 }
 
 .logo-text{
-    font-size: 5rem;
+    font-size: 7rem;
     color: white;
+    cursor: default;
+}
+
+.logo-text:hover{
+    font-size: 7rem;
+    color: orange;
 }
 
 .credits {
@@ -113,8 +122,8 @@ input{
     width: 350px;
     line-height: 2rem;
     background-color: #1F1F1F;
-    border: none;
-    color: #CCCCCC;
+    border: 1px solid rgb(0, 0, 0, 0.8);
+    color: #cfcfcf;
     font-size: 1.5rem;
     padding-left: 10px;
     border-radius: 8px;
@@ -140,6 +149,8 @@ fieldset {
     justify-content: center;
     width: 500px;
     gap: 16px;
+    border: none;
+   
 }
 
 .form-text{
@@ -156,13 +167,16 @@ fieldset {
 
 .welcome{
     font-size: 4rem;
-    color: #CCCCCC;
+    color: orange;
     font-weight: bold;
+    cursor: default;
 }
+
 
 .sign-up{
     font-size: 3rem;
-    color: #CCCCCC;
+    color: #dedcdc;
+    cursor: default;
 }
 
 label:focus{
@@ -172,27 +186,44 @@ label:focus{
 }
 
 label{
-    color: #CCCCCC;
+    color: #dedcdc;
     font-size: 2rem;
 }
 
 button{
     text-decoration: none;
-    background-color: #2ecc71;
-    border: none;
+    color: #CCCCCC;
+    background-color: rgb(0, 0, 0, 0.8);
+    border: 2px solid #dedcdc;
     border-radius: 12px;
     padding: 20px;
     font-size: 2rem;
     cursor: pointer;
 }
 
+button:hover{
+    border: 2px solid orange;
+}
 
-input:focus{
+
+input:focus {
     outline: none;
     border: 1px solid orange;
 }
 
-input:invalid{
+input:focus + .lab{
+    color: orange;
+}
+
+
+input:valid{
+    border: 1px solid green;
+}
+
+input.invalid{
     border: 1px solid red;
 }
 
+input:focus .lab{
+    color: orange;
+}
